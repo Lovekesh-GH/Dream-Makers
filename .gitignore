@@ -1,0 +1,65 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+*.sqlite3
+media
+
+# Backup files
+*.bak 
+
+# PyCharm
+.idea/
+
+# Python # 
+*.py[cod] 
+*$py.class 
+
+# Distribution / packaging 
+*.egg-info/ 
+
+# pyenv 
+.python-version 
+
+# Environments 
+.env
+pyvenv.cfg
+bin/
+lib/
+Lib
+lib64/
+lib64
+share/
+include/
+Scripts/
+
+# Sublime Text # 
+*.tmlanguage.cache 
+*.tmPreferences.cache 
+*.stTheme.cache 
+*.sublime-workspace 
+*.sublime-project 
+
+# Package control specific files Package 
+Control.last-run 
+Control.ca-list 
+Control.ca-bundle 
+Control.system-ca-bundle 
+GitHub.sublime-settings 
+
+# Visual Studio Code # 
+.vscode/
+.history
+
+# Misc
+tmp/
+.cache/
+dist/
+build/
+.settings
+.DS_Store
+
+# Coverage Test Reports
+.coverage
+htmlcov
