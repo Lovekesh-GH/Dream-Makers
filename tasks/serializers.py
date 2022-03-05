@@ -1,6 +1,6 @@
 
 from rest_framework import serializers
-from .models import NormalTasks, SpecialTasks, Completedtasks, SCompletedtasks
+from tasks.models import NormalTasks, SpecialTasks, Completedtasks, SCompletedtasks
 
 
 
