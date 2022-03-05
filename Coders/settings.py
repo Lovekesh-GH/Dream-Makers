@@ -29,12 +29,12 @@ INSTALLED_APPS = [
     
     "rest_framework",
     "Notification",
-<<<<<<< HEAD
+
     "tasks",
-=======
+
     "webpush",
     "user",
->>>>>>> 2f63ee7187f0ec65b7b5040f463f2e8b9b5be19f
+
 ]
 
 MIDDLEWARE = [

@@ -6,9 +6,9 @@ from .serializers import *
 from .models import NormalTasks,SpecialTasks
 
 # Create your views here.
-class NotificationView(GenericAPIView, ListModelMixin, CreateModelMixin):
-    serializer_class = NormalSerializer
-    queryset = NormalTasks.objects.all()
+class SNotificationView(GenericAPIView, ListModelMixin, CreateModelMixin):
+    serializer_class = SpecialSerializer
+    queryset = SpecialTasks.objects.all()
 
     def get(self, request: Request):
         return self.list(request)
@@ -17,7 +17,7 @@ class NotificationView(GenericAPIView, ListModelMixin, CreateModelMixin):
         return self.create(request , *args , **kwargs)
 
 
-class NotificationViewUpdate(GenericAPIView , RetrieveModelMixin , UpdateModelMixin , DestroyModelMixin):
+class SNotificationViewUpdate(GenericAPIView , RetrieveModelMixin , UpdateModelMixin , DestroyModelMixin):
     serializer_class = SpecialSerializer
     queryset = SpecialTasks.objects.all()
 
@@ -32,3 +32,31 @@ class NotificationViewUpdate(GenericAPIView , RetrieveModelMixin , UpdateModelMi
 
     def delete(self, request, *args, **kwargs):
         return self.destroy(request, *args, **kwargs)
+
+class NotificationView(GenericAPIView, ListModelMixin, CreateModelMixin):
+    serializer_class = NormalSerializer
+    queryset = NormalTasks.objects.all()
+
+    def get(self, request: Request):
+        return self.list(request)
+
+    def post(self , request , *args ,**kwargs):
+        return self.create(request , *args , **kwargs)
+
+
+class NotificationViewUpdate(GenericAPIView , RetrieveModelMixin , UpdateModelMixin , DestroyModelMixin):
+    serializer_class = NormalSerializer
+    queryset = NormalTasks.objects.all()
+
+    def put(self, request, *args, **kwargs):
+        return self.update(request, *args, **kwargs)
+
+    def patch(self, request, *args, **kwargs):
+        return self.partial_update(request, *args, **kwargs)
+
+    def get(self, request, *args, **kwargs):
+        return self.retrieve(request, *args, **kwargs)
+
+    def delete(self, request, *args, **kwargs):
+        return self.destroy(request, *args, **kwargs)
+
