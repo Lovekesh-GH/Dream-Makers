@@ -1,8 +1,6 @@
 from django.db import models
 from user.models import Users
 
-# Create your models here.
-
 class NormalTasks(models.Model):
     task_name = models.CharField(max_length=100, null=False, blank=True)
     task_description = models.CharField(max_length=255, null=False)

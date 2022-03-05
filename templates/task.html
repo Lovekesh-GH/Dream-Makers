@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% block title %}Tasks{% endblock title %}
+{% block style %}
+{% load static %}
+    <style>
+        .storescrollbar{
+            overflow-y: scroll;
+        }
+        .storescrollbar::-webkit-scrollbar{
+            display: none;
+        }
+        .showshop{
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+{% endblock style %}
+
+{% block content %}
+<div style="background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);">
+
+    {% load static %}
+    <img src="{% static 'Images/shop.png'%}" alt="" height="45rem" id="shoplogo" class="float-lg-end sticky-sm-top shoplogo" style="cursor: pointer";>
+
+    <div class="text-white fs-1 text-center text-decoration-underline"
+        style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;">
+        Your Daily Tasks
+    </div>
+
+    <div class="d-flex flex-wrap">
+
+        <div class="card" style="width: 18rem;margin: 1.5rem 2.5rem;">
+            <img src="Images/health.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Task Name</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates
+                    tenetur provident odit dolor ducimus distinctio saepe aperiam eos assumenda, hic fugiat
+                    nesciunt, minus cumque vitae. Excepturi placeat numquam saepe?</p>
+                <div class="d-flex justify-content-between">
+                    <div>Start Time: </div>
+                    <div> 20:2:29 am</div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>End Time: </div>
+                    <div> 20:2:29 am</div>
+                </div>
+
+            </div>
+            <div class="card-body d-flex justify-content-center">
+                <button class="btn btn-primary">Completed</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="text-white fs-1 text-center text-decoration-underline" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;">Special Tasks</div>
+    <div class="d-flex flex-wrap">
+
+        <div class="card" style="width: 18rem;margin: 1.5rem 2.5rem;">
+            <img src="Images/health.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Task Name</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates
+                    tenetur provident odit dolor ducimus distinctio saepe aperiam eos assumenda, hic fugiat
+                    nesciunt, minus cumque vitae. Excepturi placeat numquam saepe?</p>
+                <div class="d-flex justify-content-between">
+                    <div>Start Time: </div>
+                    <div> 20:2:29 am</div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>End Time: </div>
+                    <div> 20:2:29 am</div>
+                </div>
+
+            </div>
+            <div class="card-body d-flex justify-content-center">
+                <button class="btn btn-primary">Completed</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<div id="showshop" class="showshop" style="height: 100vh;width: 99vw;background-color: rgba(0, 0, 0, .7);position: absolute;top: 0;">
+    
+    <div id="shopclear" style="transform: rotate(48deg);font-size: 5rem; position: absolute;top: -3rem;right: -.5rem;color: red;cursor: pointer;">
+        +
+    </div>
+
+    <div style="height: 43rem;width: 90rem; background-color: white;border-radius: 1rem;">
+
+        <div class="text-center fs-2 text-decoration-underline" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";>
+            Store
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-evenly align-items-center storescrollbar" style="background-color: #c8f3f0; height: 39rem;margin: 0 1rem;border-radius: 1rem;">
+            
+            <div class="card" style="width: 18rem;margin: 1rem 0;">
+                <img src="Images/health.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product name</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates
+                        tenetur provident odit dolor ducimus distinctio saepe aperiam eos assumenda, hic fugiat
+                        nesciunt, minus cumque vitae. Excepturi placeat numquam saepe?</p>
+                    <div class="d-flex justify-content-between">
+                        <div>Price: </div>
+                        <div> $12000</div>
+                    </div>
+
+                </div>
+                <div class="card-body d-flex justify-content-center">
+                    <button class="btn btn-primary">Purchase</button>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;margin: 1rem 0;">
+                <img src="Images/health.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product name</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates
+                        tenetur provident odit dolor ducimus distinctio saepe aperiam eos assumenda, hic fugiat
+                        nesciunt, minus cumque vitae. Excepturi placeat numquam saepe?</p>
+                    <div class="d-flex justify-content-between">
+                        <div>Price: </div>
+                        <div> $12000</div>
+                    </div>
+
+                </div>
+                <div class="card-body d-flex justify-content-center">
+                    <button class="btn btn-primary">Purchase</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
+
+{% block script %}
+<script>
+
+    function preventScroll(){
+        window.onscroll = () => window.scroll(0,0);
+    }
+
+    function Scroll(){
+        window.onscroll = () => window.scroll();
+    }
+
+    var showshop = document.getElementById("showshop");
+    var shoplogo = document.getElementById("shoplogo");
+    var shopclear = document.getElementById("shopclear");
+
+    shoplogo.addEventListener('click',(e)=>{
+        preventScroll();
+        shoplogo.style.display = "none";
+        showshop.style.display = "flex";
+    })
+
+    shopclear.addEventListener('click',(e)=>{
+        Scroll();
+        showshop.style.display = "none";
+        shoplogo.style.display = "block"
+    })
+
+</script>
+
+{% endblock script %}

@@ -1,11 +1,8 @@
 from django.urls import path
 from django.urls.resolvers import URLPattern
-from home import views
-from home.views import HomePageView,TeamPageView
+from . import views
 
 urlpatterns = [
-    # path("", views.HomePageView, name="home"),
-    path("", HomePageView.as_view(), name="home"),
-    path("team/", TeamPageView.as_view(), name="team"),
-    
+    path("", views.home, name="home"),
+    path("taskpage/",views.tasks,name="taskspage")    
 ]
