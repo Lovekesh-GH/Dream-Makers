@@ -29,7 +29,12 @@ INSTALLED_APPS = [
     
     "rest_framework",
     "Notification",
+
     "tasks",
+
+    "webpush",
+    "user",
+
 ]
 
 MIDDLEWARE = [
@@ -68,6 +73,11 @@ DATABASES = {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     }
+}
+WEBPUSH_SETTINGS = {
+    "VAPID_PUBLIC_KEY": "BKviTKRx21AEtB2ATMtpj_lK4gaDrlIHkT1b_wtOaqrzzRRmDZ59HbFq9-vt61-22JIJZB-Gn_PSooJcxHjXx-k",
+    "VAPID_PRIVATE_KEY":"PNkpf6Qi2PwKjk6fqt57ZU_FmG0wmrqUnBbg6MvN050",
+    "VAPID_ADMIN_EMAIL": "20bec022@nith.ac.in"
 }
 
 
