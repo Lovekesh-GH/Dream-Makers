@@ -1,6 +1,9 @@
 from django.contrib import admin
-from .models import NormalTasks, SpecialTasks
+from tasks.models import NormalTasks, SpecialTasks, Completedtasks, SCompletedtasks
 
 # Register your models here.
 admin.site.register(NormalTasks)
 admin.site.register(SpecialTasks)
+admin.site.register(Completedtasks)
+admin.site.register(SCompletedtasks)
+
