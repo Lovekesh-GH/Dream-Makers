@@ -8,5 +8,6 @@ urlpatterns = [
     path('Notification/', include('Notification.urls')),
     path('user/', include('user.urls')),
     path('tasks/', include('tasks.urls')),
+    path('store/', include('store.urls')),
     url(r'^webpush/', include('webpush.urls'))
 ]
