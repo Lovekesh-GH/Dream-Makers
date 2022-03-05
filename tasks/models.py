@@ -1,4 +1,5 @@
 from django.db import models
+from user.models import Users
 
 # Create your models here.
 
@@ -24,3 +25,24 @@ class SpecialTasks(models.Model):
 
     def __str__(self):
         return self.Stask_name
+
+
+class Completedtasks(models.Model):
+
+    t_name = models.ForeignKey(NormalTasks, on_delete=models.CASCADE)
+    image = models.URLField(default = 300)
+    CompletedBy = models.ForeignKey(Users, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.t_name
+
+
+
+class SCompletedtasks(models.Model):
+
+    t_name = models.ForeignKey(SpecialTasks, on_delete=models.CASCADE)
+    image = models.URLField(default = 300)
+    CompletedBy = models.ForeignKey(Users, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.t_name
