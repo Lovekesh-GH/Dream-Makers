@@ -3,6 +3,7 @@ from django.urls import path
 from tasks.views import taskView, taskViewUpdate, StaskView, StaskViewUpdate, CompletedView, CompletedUpdate, SCompletedView, SCompletedViewUpdate
 
 urlpatterns = [
+
     path("", taskView.as_view()),
     path("special/", StaskView.as_view()),
     path("special/<str:pk>/", StaskViewUpdate.as_view()),
