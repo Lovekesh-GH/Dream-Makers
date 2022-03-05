@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import Store, ProductImage
-from .serializers import storeSerializer, ProductImageSerializer
+from .models import Store
+from .serializers import storeSerializer
 from rest_framework.generics import GenericAPIView , CreateAPIView
 from rest_framework.mixins import ListModelMixin , CreateModelMixin , UpdateModelMixin , RetrieveModelMixin , DestroyModelMixin
 from rest_framework.response import Response
@@ -34,13 +34,13 @@ class storeAccess(GenericAPIView , RetrieveModelMixin , UpdateModelMixin , Destr
     def delete(self, request, *args, **kwargs):
         return self.destroy(request, *args, **kwargs)
 
-class ProductImageView(GenericAPIView , ListModelMixin , CreateModelMixin):
-    serializer_class = ProductImageSerializer
-    queryset = ProductImage.objects.all()
+# class ProductImageView(GenericAPIView , ListModelMixin , CreateModelMixin):
+#     serializer_class = ProductImageSerializer
+#     queryset = ProductImage.objects.all()
 
-    def get(self, request, *args, **kwargs):
-        return self.list(request, *args, **kwargs)
+#     def get(self, request, *args, **kwargs):
+#         return self.list(request, *args, **kwargs)
 
-    def post(self , request , *args ,**kwargs):
-        return self.create(request , *args , **kwargs)
+#     def post(self , request , *args ,**kwargs):
+#         return self.create(request , *args , **kwargs)
 
