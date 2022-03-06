@@ -68,7 +68,6 @@ _``Our Project is a combination of Chatbot and Website.``_
 ![Home page](./images/7.jpeg)
 ![Home page](./images/8.jpeg)
 
-----
 <!-- CONTRIBUTING -->
 
 ## <span style="color: #f2cf4a; font-family: Babas; font-size: 1.2em;">Contributing
