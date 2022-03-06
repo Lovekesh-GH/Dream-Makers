@@ -4,7 +4,6 @@
 {% load static %}
 {% block style %}
 <style>
-
     .teamstyle {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 30px;
@@ -23,7 +22,19 @@
         justify-content: center;
         padding-left: 4vw;
     }
-</style> 
+
+    .loginform {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .regform {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
 {% endblock style %}
 
 
@@ -35,75 +46,162 @@
         reprehenderit deleniti.
     </div>
     <div>
-        <button class="btn btn-outline-primary btn-lg col-3">Get Started</button>
+        <button id="showreg" class="btn btn-outline-primary btn-lg col-3">Get Started</button>
     </div>
 </div>
 
 
-<div class="bg-light text-light d-flex flex-column justify-content-evenly align-items-center"
-style="height: 30rem;">
-<div class="teamstyle" style="padding-bottom: 20px;">
-    Our Team
-</div>
+<div class="bg-light text-light d-flex flex-column justify-content-evenly align-items-center" style="height: 30rem;">
+    <div class="teamstyle" style="padding-bottom: 20px;">
+        Our Team
+    </div>
 
-<div class="d-flex" style="width:200vw;overflow: hidden;">
+    <div class="d-flex" style="width:200vw;overflow: hidden;">
 
-    <div id="team1" class="d-flex justify-content-evenly"
-        style="width: 100vw; position: relative;left: 50vw;transition: all 3s ease-in-out;">
-        <div class="d-flex flex-column justify-content-evenly align-items-center"
-            style="border-radius: 1rem;height: 25rem;width: 23rem;overflow: hidden;background-color: rgb(203, 202, 206);">
-            <div style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
+        <div id="team1" class="d-flex justify-content-evenly"
+            style="width: 100vw; position: relative;left: 50vw;transition: all 3s ease-in-out;">
+            <div class="d-flex flex-column justify-content-evenly align-items-center"
+                style="border-radius: 1rem;height: 25rem;width: 23rem;overflow: hidden;background-color: rgb(203, 202, 206);">
+                <div style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
+                </div>
+                <div class="teamstyle">
+                    John
+                </div>
+                <div class="teamstyle">
+                    FullStack Developer
+                </div>
             </div>
-            <div class="teamstyle">
-                John
-            </div>
-            <div class="teamstyle">
-                FullStack Developer
+
+            <div class="d-flex flex-column justify-content-evenly align-items-center"
+                style="border-radius: 1rem;height: 25rem;width: 23rem;overflow: hidden;background-color: rgb(203, 202, 206);">
+                <div style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
+                </div>
+                <div class="teamstyle">
+                    John
+                </div>
+                <div class="teamstyle">
+                    FullStack Developer
+                </div>
             </div>
         </div>
 
-        <div class="d-flex flex-column justify-content-evenly align-items-center"
-            style="border-radius: 1rem;height: 25rem;width: 23rem;overflow: hidden;background-color: rgb(203, 202, 206);">
-            <div style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
+        <div id="team2" class="d-flex justify-content-evenly"
+            style="position: relative;right: -50vw;width: 100vw;transition: all 3s ease-in-out;">
+            <div class="d-flex flex-column justify-content-evenly align-items-center"
+                style="border-radius: 1rem;height: 25rem;width: 23rem;overflow: hidden;background-color: rgb(203, 202, 206);">
+                <div style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
+                </div>
+                <div class="teamstyle">
+                    John
+                </div>
+                <div class="teamstyle">
+                    FullStack Developer
+                </div>
             </div>
-            <div class="teamstyle">
-                John
+
+            <div class="d-flex flex-column justify-content-evenly align-items-center"
+                style="border-radius: 1rem;height: 25rem;width: 23rem;overflow: hidden;background-color: rgb(203, 202, 206);">
+                <div style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
+                </div>
+                <div class="teamstyle">
+                    John
+                </div>
+                <div class="teamstyle">
+                    FullStack Developer
+                </div>
             </div>
-            <div class="teamstyle">
-                FullStack Developer
+        </div>
+
+    </div>
+</div>
+
+<div id="login" class="loginform"
+    style="height: 100vh;width: 99vw;background-color: rgba(0, 0, 0, .7);position: absolute;top: 0;">
+
+    <div id="loginclear"
+        style="transform: rotate(48deg);font-size: 5rem; position: absolute;top: -3rem;right: -.5rem;color: red;cursor: pointer;">
+        +
+    </div>
+
+    <div style="height: 16rem;width: 60rem; background-color: white;border-radius: 1rem;">
+        <form action="" method="POST">
+            <div class="fs-2 text-center text-decoration-underline">Login Form</div>
+            <div class="d-flex justify-content-evenly mt-4">
+                <div class="fs-2">
+                    {{loginform.username.label_tag}}
+                </div>
+                <div class="col-6">
+                    {{loginform.username}}
+                </div>
+            </div>
+            <div class="d-flex justify-content-evenly">
+                <div class="fs-2">
+                    {{loginform.password.label_tag}}
+                </div>
+                <div class="col-6">
+                    {{loginform.password}}
+                </div>
+            </div>
+            <div class="text-center">
+                <input type="submit" id="logbtn" value="Login" class="btn btn-success col-8"
+                    style="margin-left:7.3vw;margin-top:.5vw;font-size:1.3vw;">
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+
+
+<div id="reg" class="regform"
+    style="height: 100vh;width: 99vw;background-color: rgba(0, 0, 0, .7);position: absolute;top: 0;">
+
+    <div id="regclear"
+        style="transform: rotate(48deg);font-size: 5rem; position: absolute;top: -3rem;right: -.5rem;color: red;cursor: pointer;">
+        +
+    </div>
+
+    <div style="height: 33rem;width: 60rem; background-color: white;border-radius: 1rem;">
+        <div class="text-center fs-2 text-dark text-decoration-underline">SignUp Form</div>
+        <div style="border: .2px solid black;margin: 1vw 1vw;"></div>
+        <div>
+            <form action="" method="POST" style="margin-left:2vw;margin-right:2vw;">
+                {% csrf_token %}
+                <div>{{regform.username.label_tag}}</div>
+                {{regform.username}}
+                <div class="d-flex justify-content-around" style="margin-top: .7vw;">
+                    {{regform.first_name.label_tag}}
+                    {{regform.last_name.label_tag}}
+                </div>
+                <div class="d-flex justify-content-around">
+                    {{regform.first_name}}
+                    {{regform.last_name}}
+                </div>
+                <div style="margin-top: .7vw;">{{regform.email.label_tag}}</div>
+                {{regform.email}}
+                <div style="margin-top: .7vw;">{{regform.password1.label_tag}}</div>
+                {{regform.password1}}
+                <div style="margin-top: .7vw;">{{regform.password2.label_tag}}</div>
+                {{regform.password2}}
+                <input type="submit" id="regbtn" value="Sign Up" class="btn btn-success col-8"
+                    style="margin-left:7.3vw;margin-top:2vw;font-size:1.3vw;">
+            </form>
+            <div class="d-flex justify-content-center mt-2">
+                <div>
+                    Already have an account?
+                </div>
+                <div id="gotologin" class="text-primary mx-2" style="cursor: pointer;">
+                    Login
+                </div>
             </div>
         </div>
     </div>
-
-    <div id="team2" class="d-flex justify-content-evenly"
-        style="position: relative;right: -50vw;width: 100vw;transition: all 3s ease-in-out;">
-        <div class="d-flex flex-column justify-content-evenly align-items-center"
-            style="border-radius: 1rem;height: 25rem;width: 23rem;overflow: hidden;background-color: rgb(203, 202, 206);">
-            <div style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
-            </div>
-            <div class="teamstyle">
-                John
-            </div>
-            <div class="teamstyle">
-                FullStack Developer
-            </div>
-        </div>
-
-        <div class="d-flex flex-column justify-content-evenly align-items-center"
-            style="border-radius: 1rem;height: 25rem;width: 23rem;overflow: hidden;background-color: rgb(203, 202, 206);">
-            <div style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
-            </div>
-            <div class="teamstyle">
-                John
-            </div>
-            <div class="teamstyle">
-                FullStack Developer
-            </div>
-        </div>
-    </div>
+</div>
 
 </div>
-</div>
+
+
 {% endblock content %}
 
 
@@ -111,13 +209,45 @@ style="height: 30rem;">
 {% block script %}
 <script>
 
+    function preventScroll() {
+        window.onscroll = () => window.scroll(0, 0);
+    }
 
-    window.addEventListener("scroll",(e)=>{
-        if(window.scrollY>10){
-           document.getElementById("navbar").style.display = "flex" 
+    function Scroll() {
+        window.onscroll = () => window.scroll();
+    }
+
+    var showreg = document.getElementById("showreg");
+    var loginclear = document.getElementById("loginclear");
+    var login = document.getElementById("login");   
+    var gottologin = document.getElementById("gotologin");
+
+    showreg.addEventListener('click', (e) => {
+        preventScroll();
+        reg.style.display = "flex";
+    })
+
+    gottologin.addEventListener('click',(e)=>{
+        reg.style.display = "none";
+        login.style.display = "flex";
+    })
+
+    regclear.addEventListener('click', (e) => {
+        Scroll();
+        reg.style.display = "none";
+    })
+
+    loginclear.addEventListener('click', (e) => {
+        Scroll();
+        login.style.display = "none";
+    })
+
+    window.addEventListener("scroll", (e) => {
+        if (window.scrollY > 10) {
+            document.getElementById("navbar").style.display = "flex"
         }
-        else{
-            document.getElementById("navbar").style.display = "none" 
+        else {
+            document.getElementById("navbar").style.display = "none"
         }
     });
 
