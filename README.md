@@ -3,11 +3,8 @@
 ##  💼 &nbsp; <span style="color: #f2cf4a; font-family: Babas; font-size: 1.4em;">**Tagline :**</span><span style="color:#fff; font-family: 'Bebas Neue'; font-size: 1.2em;">  From Depresion to Deep Rest
 </span>
 
-
  🛠 &nbsp;<span style="color: #f2cf4a; font-family: Babas; font-size: 1.4em;">Tech Stack
 </span>
-
-
 ![RestFramework](https://img.shields.io/badge/RestFramework%20-%23092E20.svg?&style=for-the-badge&logo=django&logoColor=white)&nbsp;
 ![IBMWatson](https://img.shields.io/badge/IBMWatson-%2320232a.svg?style=for-the-badge&logo=IBMWatson&logoColor=%2361DAFB)&nbsp;
 ![Django](https://img.shields.io/badge/django%20-%23092E20.svg?&style=for-the-badge&logo=django&logoColor=white)&nbsp;
@@ -17,8 +14,6 @@
 ![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)&nbsp;
 ![Javascipt](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)&nbsp;
 ![BOOTSTRAP](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)&nbsp;
-
-
 
 ##  💼 &nbsp; <span style="color: #f2cf4a; font-family: Babas; font-size: 1.4em;">**Challenges we ran into**
 </span>
@@ -38,10 +33,11 @@
 </span>
 
 _``Our Project is a combination of Chatbot and Website.``_
-<details>
-           <summary><span style="font-family:Papyrus; font-size:1.5em;">Website</span></summary>
-           <p></p>
-         </details>
+
+💼 &nbsp; <span style="color: #f2cf4a; font-family: Babas; font-size: 1.4em;">**Website**
+</span>
+<span style="color:#fff; font-family: 'Bebas Neue'; font-size: 1.2em;">
+</span>
 
 >Our project is an initiative to raise awareness about mental health and lend a helping hand towards those who are going through rough times. The basic idea is to develop a space(platform) where one can talk openly about problems he/she is facing without revealing his/her identity. Moreover, we approach to help them in the long term by using our website to reschedule their life, so that they steadily overcome this stage of life.
 
@@ -64,6 +60,7 @@ _``Our Project is a combination of Chatbot and Website.``_
 
 ><span style="color:gold; font-family: Babas; font-size: 1.4em;">5) **Chatbot**:</span>Now comes the heart of our webpage that is <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">Chatbot</span> named ***Raghav***. Your friend that stands with you in all situations and uplift your mood and revive your broken confidence.Our IBM Watson lite bot designed using AI will help people to analyze their depression and on the other hand web application will help to cure their problem giving them a proper routine.
 ![Home page](./images/5.jpg)
+
 <span style="font-family: times, serif; font-size:11pt; font-style:italic">Click on the 
 [Link](https://drive.google.com/file/d/1CXnzpZCOaGdLIogPopiNcQ4GtadVNMoc/view?usp=sharing)
 to check the demo of the Chatbot</span>
@@ -71,7 +68,6 @@ to check the demo of the Chatbot</span>
 ><span style="color:gold; font-family: Babas; font-size: 1.4em;">6) **Team**:</span>
 ![Home page](./images/7.jpeg)
 ![Home page](./images/8.jpeg)
-
 
 ----
 
