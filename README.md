@@ -54,7 +54,7 @@ _``Our Project is a combination of Chatbot and Website.``_
 ![Home page](./images/3.jpeg)
 
 ><span style="color:gold; font-family: Babas; font-size: 1.4em;">3) **Special Task**:</span>Our site also includes a set of specially designed tasks that our given to an individual on daily basis. The tasks are not only meant to destress the individual but also the streak based format makes them more lively and fun to do.
-![Home page](./images/3.jpeg)
+![Home page](./images/2.jpeg)
 
 <span style="color:gold; font-family: Babas; font-size: 1.4em;">4) **Store**:</span>After earning points from their daily streaks and special activities, they can make the most of their rewards by buying exciting stuff from our store of items.
 ![Home page](./images/4.jpeg)
