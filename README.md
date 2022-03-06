@@ -63,9 +63,6 @@ _``Our Project is a combination of Chatbot and Website.``_
 <div> 
 <img src = "images/5.jpg"/>
 </div>
-><span style="font-family: times, serif; font-size:11pt; font-style:italic">Click on the 
-[Link](https://drive.google.com/file/d/1CXnzpZCOaGdLIogPopiNcQ4GtadVNMoc/view?usp=sharing)
-to check the demo of the Chatbot</span>
 
 <span style="color:gold; font-family: Babas; font-size: 1.4em;">6) **Team**:</span>
 ![Home page](./images/7.jpeg)
