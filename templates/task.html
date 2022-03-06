@@ -14,6 +14,9 @@
             justify-content: center;
             align-items: center;
         }
+        .addimage{
+            display:none;
+        }
     </style>
 {% endblock style %}
 
@@ -23,6 +26,16 @@
     {% load static %}
     <img src="{% static 'Images/shop.png'%}" alt="" height="45rem" id="shoplogo" class="float-lg-end sticky-sm-top shoplogo" style="cursor: pointer";>
 
+    <div class="d-flex" style="position: absolute;top: 0;left: 2rem;top:.2rem; border: .2rem solid rgb(33, 177, 45);">
+        <div style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 1.4rem;color: white;text-decoration: underline;">
+            Total Score
+        </div>
+        <div>
+           <span style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 1.4rem;color: white;margin-left: .2rem;"> : 20</span>
+            <span><img src="{%static 'Images/diamond.png'%}" alt="" height="24rem"></span>
+        </div>
+    </div>
+
     <div class="text-white fs-1 text-center text-decoration-underline"
         style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;">
         Your Daily Tasks
@@ -30,25 +43,95 @@
 
     <div class="d-flex flex-wrap">
 
-        <div class="card" style="width: 18rem;margin: 1.5rem 2.5rem;">
-            <img src="Images/health.jpg" class="card-img-top" alt="...">
+        
+        <div class="card" style="width: 25rem;margin: 1.5rem 2.5rem;">
+            <img src="{% static 'Images/walking.jfif'%}" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Task Name</h5>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates
-                    tenetur provident odit dolor ducimus distinctio saepe aperiam eos assumenda, hic fugiat
-                    nesciunt, minus cumque vitae. Excepturi placeat numquam saepe?</p>
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Daily Walk</h5>
+                    <img src="{%static 'Images/diamond.png'%}" alt="" height="24rem">
+                </div>
+                <p class="card-text">Walking is a form of low impact, moderate intensity exercise that has a range of health benefits and few risks. As a result, the CDC recommend that most adults aim for 10,000 steps per day . For most people, this is the equivalent of about 8 kilometers, or 5 miles.</p>
                 <div class="d-flex justify-content-between">
                     <div>Start Time: </div>
-                    <div> 20:2:29 am</div>
+                    <div> 6:00 am</div>
                 </div>
                 <div class="d-flex justify-content-between">
                     <div>End Time: </div>
-                    <div> 20:2:29 am</div>
+                    <div> 6:30 am</div>
                 </div>
 
             </div>
+            <div id="addimage" class="addimage">
+                <form action="" method = "POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                   <input type="file" name="addimage" required style="margin-top: 3vw;margin-left: 1vw;">
+                   <input type="submit" class="btn btn-success" value="Submit" id="imgsubbtn" style="margin-top: 2vw; margin-left: 7vw; font-size: 1.2vw; width: 6vw;">
+                  </form>
+            </div>
             <div class="card-body d-flex justify-content-center">
-                <button class="btn btn-primary">Completed</button>
+                <button id="compbtn" class="btn btn-primary">Complete</button>
+            </div>
+        </div>
+
+
+        <div class="card" style="width: 25rem;margin: 1.5rem 2.5rem;">
+            <img src="{% static 'Images/meditation.jfif'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Meditation</h5>
+                    <img src="{%static 'Images/diamond.png'%}" alt="" height="24rem">
+                </div>
+                <p class="card-text">Meditation is considered a type of mind-body complementary medicine. Meditation can produce a deep state of relaxation and a tranquil mind. During meditation, you focus your attention and eliminate the stream of jumbled thoughts that may be crowding your mind and causing stress.</p>
+                <div class="d-flex justify-content-between">
+                    <div>Start Time: </div>
+                    <div> 6:30 am</div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>End Time: </div>
+                    <div> 7:30 am</div>
+                </div>
+
+            </div>
+            <div id="addimage" class="addimage">
+                <form action="" method = "POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                   <input type="file" name="addimage" required style="margin-top: 3vw;margin-left: 1vw;">
+                   <input type="submit" class="btn btn-success" value="Submit" id="imgsubbtn" style="margin-top: 2vw; margin-left: 7vw; font-size: 1.2vw; width: 6vw;">
+                  </form>
+            </div>
+            <div class="card-body d-flex justify-content-center">
+                <button id="compbtn" class="btn btn-primary">Complete</button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 25rem;margin: 1.5rem 2.5rem;">
+            <img src="{% static 'Images/book.jfif'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Hobby Section</h5>
+                    <img src="{%static 'Images/diamond.png'%}" alt="" height="24rem">
+                </div>
+                <p class="card-text">Practicing a hobby creates chemical reactions in your brain that may stave off mental illness for some. Also, hobbies can improve mental alertness and concentration. I think it also boosts one’s self esteem.</p>
+                <div class="d-flex justify-content-between">
+                    <div>Start Time: </div>
+                    <div> 9:00 am</div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>End Time: </div>
+                    <div> 10:00 am</div>
+                </div>
+
+            </div>
+            <div id="addimage" class="addimage">
+                <form action="" method = "POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                   <input type="file" name="addimage" required style="margin-top: 3vw;margin-left: 1vw;">
+                   <input type="submit" class="btn btn-success" value="Submit" id="imgsubbtn" style="margin-top: 2vw; margin-left: 7vw; font-size: 1.2vw; width: 6vw;">
+                  </form>
+            </div>
+            <div class="card-body d-flex justify-content-center">
+                <button id="compbtn" class="btn btn-primary">Complete</button>
             </div>
         </div>
 
@@ -56,22 +139,29 @@
 
 
     <div class="text-white fs-1 text-center text-decoration-underline" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;">Special Tasks</div>
-    <div class="d-flex flex-wrap">
+    <div class="d-flex flex-wrap justify-content-center">
 
-        <div class="card" style="width: 18rem;margin: 1.5rem 2.5rem;">
-            <img src="Images/health.jpg" class="card-img-top" alt="...">
+        <div class="card" style="width: 25rem;margin: 1.5rem 2.5rem;">
+            <img src="{% static 'Images/health.jpg'%}" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Task Name</h5>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates
-                    tenetur provident odit dolor ducimus distinctio saepe aperiam eos assumenda, hic fugiat
-                    nesciunt, minus cumque vitae. Excepturi placeat numquam saepe?</p>
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Playing Sports</h5>
+                    <div>
+                    <img src="{%static 'Images/diamond.png'%}" alt="" height="24rem">
+                    <img src="{%static 'Images/diamond.png'%}" alt="" height="24rem">
+                    <img src="{%static 'Images/diamond.png'%}" alt="" height="24rem">
+                    <img src="{%static 'Images/diamond.png'%}" alt="" height="24rem">
+                    <img src="{%static 'Images/diamond.png'%}" alt="" height="24rem">
+                </div>
+                </div>
+                <p class="card-text">Sports experiences help building positive self- esteem and in addition, participating in sports can be a helpful way of reducing stress and increasing feelings of physical and mental well-being, as well as fighting against juvenile delinquency, conflict and aggressive outbursts.</p>
                 <div class="d-flex justify-content-between">
                     <div>Start Time: </div>
-                    <div> 20:2:29 am</div>
+                    <div> 11:00 am</div>
                 </div>
                 <div class="d-flex justify-content-between">
                     <div>End Time: </div>
-                    <div> 20:2:29 am</div>
+                    <div> 12:00 pm</div>
                 </div>
 
             </div>
@@ -92,24 +182,22 @@
         +
     </div>
 
-    <div style="height: 43rem;width: 90rem; background-color: white;border-radius: 1rem;">
+    <div style="height: 43rem;width: 90rem; background-color: rgb(120, 202, 223);border-radius: 1rem;">
 
-        <div class="text-center fs-2 text-decoration-underline" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";>
+        <div class="text-center text-light fs-2 text-decoration-underline" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; letter-spacing: .1rem;";>
             Store
         </div>
 
         <div class="d-flex flex-wrap justify-content-evenly align-items-center storescrollbar" style="background-color: #c8f3f0; height: 39rem;margin: 0 1rem;border-radius: 1rem;">
             
             <div class="card" style="width: 18rem;margin: 1rem 0;">
-                <img src="Images/health.jpg" class="card-img-top" alt="...">
+                <img src="{% static 'Images/boat.jpg'%}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Product name</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates
-                        tenetur provident odit dolor ducimus distinctio saepe aperiam eos assumenda, hic fugiat
-                        nesciunt, minus cumque vitae. Excepturi placeat numquam saepe?</p>
+                    <h5 class="card-title">Boat Rockerz</h5>
+                    <p class="card-text">510 Wireless Bluetooth On Ear Headphones with Mic (Raging Red)</p>
                     <div class="d-flex justify-content-between">
                         <div>Price: </div>
-                        <div> $12000</div>
+                        <div><span><img src="{%static 'Images/diamond.png'%}" alt="" height="24rem"></span> 1000</div>
                     </div>
 
                 </div>
@@ -120,15 +208,13 @@
 
 
             <div class="card" style="width: 18rem;margin: 1rem 0;">
-                <img src="Images/health.jpg" class="card-img-top" alt="...">
+                <img src="{% static 'Images/laptop.jpg'%}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Product name</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates
-                        tenetur provident odit dolor ducimus distinctio saepe aperiam eos assumenda, hic fugiat
-                        nesciunt, minus cumque vitae. Excepturi placeat numquam saepe?</p>
+                    <h5 class="card-title">MSI GT83 Titan </h5>
+                    <p class="card-text">8RG-029UK 18.4-Inch Gaming Laptop - (Black) (Intel i7-8850H, 32 GB RAM, 1 TB HDD, NVIDIA GeForce GTX 1080 SLI with 8GB GDDR5X, Windows 10 Home)</p>
                     <div class="d-flex justify-content-between">
                         <div>Price: </div>
-                        <div> $12000</div>
+                        <div><span><img src="{%static 'Images/diamond.png'%}" alt="" height="24rem"></span> 10000</div>
                     </div>
 
                 </div>
@@ -158,6 +244,13 @@
     var showshop = document.getElementById("showshop");
     var shoplogo = document.getElementById("shoplogo");
     var shopclear = document.getElementById("shopclear");
+    var compbtn = document.getElementById("compbtn");
+    var addimage = document.getElementById("addimage");
+
+    compbtn.addEventListener('click',(e)=>{
+        addimage.style.display = "block";
+        compbtn.style.display = "none";
+    })
 
     shoplogo.addEventListener('click',(e)=>{
         preventScroll();

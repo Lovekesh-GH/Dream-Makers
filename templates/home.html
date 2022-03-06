@@ -34,16 +34,40 @@
         justify-content: center;
         align-items: center;
     }
+
+    #member1{
+        background-image: url("{% static 'Images/lovekesh.jpeg'%}");
+        background-size: cover;
+        background-position-y: center;
+        background-position-x: center;
+    }
+    #member2{
+        background-image: url("{% static 'Images/sanat.JPG'%}");
+        background-size: cover;
+        background-position-y: center;
+        background-position-x: center;
+    }
+    #member3{
+        background-image: url("{% static 'Images/anmol.jfif'%}");
+        background-size: cover;
+        background-position-y: center;
+        background-position-x: center;
+    }
+    #member4{
+        background-image: url("{% static 'Images/mrigesh.jpeg'%}");
+        background-size: cover;
+        background-position-y: center;
+        background-position-x: center;
+    }
 </style>
 {% endblock style %}
 
 
 {% block content %}
 <div class="landingimg">
-    <div style="height: 15vw;width: 40vw;font-size: 23px;color: white;">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae ullam dolores, temporibus atque iste
-        quas veniam necessitatibus in inventore rerum ea totam asperiores sed accusantium eligendi ab nisi
-        reprehenderit deleniti.
+    <div style="height: 15vw;width: 40vw;font-size: 33px;color: rgb(35, 36, 35);font-weight: bolder;">
+        Welcome to Denihilify
+        We are here with the best Schedule ,Follow it and you'll feel the peace and happiness :)
     </div>
     <div>
         <button id="showreg" class="btn btn-outline-primary btn-lg col-3">Get Started</button>
@@ -52,7 +76,7 @@
 
 
 <div class="bg-light text-light d-flex flex-column justify-content-evenly align-items-center" style="height: 30rem;">
-    <div class="teamstyle" style="padding-bottom: 20px;">
+    <div class="teamstyle" style="padding-bottom: 20px;font-size: 40px;">
         Our Team
     </div>
 
@@ -60,54 +84,56 @@
 
         <div id="team1" class="d-flex justify-content-evenly"
             style="width: 100vw; position: relative;left: 50vw;transition: all 3s ease-in-out;">
+
             <div class="d-flex flex-column justify-content-evenly align-items-center"
                 style="border-radius: 1rem;height: 25rem;width: 23rem;overflow: hidden;background-color: rgb(203, 202, 206);">
-                <div style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
+                <div id="member1" style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
                 </div>
-                <div class="teamstyle">
-                    John
+                <div class="teamstyle" style="color: black;">
+                    Lovekesh Bansal
                 </div>
-                <div class="teamstyle">
+                <div class="teamstyle" style="color: #dfe3f0;">
                     FullStack Developer
                 </div>
             </div>
 
             <div class="d-flex flex-column justify-content-evenly align-items-center"
                 style="border-radius: 1rem;height: 25rem;width: 23rem;overflow: hidden;background-color: rgb(203, 202, 206);">
-                <div style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
+                <div id="member2" style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
                 </div>
                 <div class="teamstyle">
-                    John
+                    Sanat Thakur
                 </div>
-                <div class="teamstyle">
-                    FullStack Developer
+                <div class="teamstyle" style="color: #dfe3f0;">
+                    FrontEnd Developer
                 </div>
             </div>
         </div>
 
         <div id="team2" class="d-flex justify-content-evenly"
             style="position: relative;right: -50vw;width: 100vw;transition: all 3s ease-in-out;">
+
             <div class="d-flex flex-column justify-content-evenly align-items-center"
                 style="border-radius: 1rem;height: 25rem;width: 23rem;overflow: hidden;background-color: rgb(203, 202, 206);">
-                <div style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
+                <div id="member3" style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
                 </div>
                 <div class="teamstyle">
-                    John
+                    Anmol
                 </div>
-                <div class="teamstyle">
-                    FullStack Developer
+                <div class="teamstyle" style="color: #dfe3f0;">
+                    BackEnd Developer
                 </div>
             </div>
 
             <div class="d-flex flex-column justify-content-evenly align-items-center"
                 style="border-radius: 1rem;height: 25rem;width: 23rem;overflow: hidden;background-color: rgb(203, 202, 206);">
-                <div style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
+                <div id="member4" style="height: 10rem;width: 10rem;border-radius: 10vw;" class="bg-light">
                 </div>
                 <div class="teamstyle">
-                    John
+                    Mrigesh Thakur
                 </div>
-                <div class="teamstyle">
-                    FullStack Developer
+                <div class="teamstyle" style="color: #dfe3f0;">
+                    Digital Creator
                 </div>
             </div>
         </div>
@@ -123,7 +149,7 @@
         +
     </div>
 
-    <div style="height: 16rem;width: 60rem; background-color: white;border-radius: 1rem;">
+    <div style="height: 16rem;width: 40rem; background-color: white;border-radius: 1rem;">
         <form action="" method="POST">
             <div class="fs-2 text-center text-decoration-underline">Login Form</div>
             <div class="d-flex justify-content-evenly mt-4">
@@ -162,7 +188,7 @@
         +
     </div>
 
-    <div style="height: 33rem;width: 60rem; background-color: white;border-radius: 1rem;">
+    <div style="height: 34rem;width: 40rem; background-color: white;border-radius: 1rem;">
         <div class="text-center fs-2 text-dark text-decoration-underline">SignUp Form</div>
         <div style="border: .2px solid black;margin: 1vw 1vw;"></div>
         <div>
@@ -187,7 +213,7 @@
                 <input type="submit" id="regbtn" value="Sign Up" class="btn btn-success col-8"
                     style="margin-left:7.3vw;margin-top:2vw;font-size:1.3vw;">
             </form>
-            <div class="d-flex justify-content-center mt-2">
+            <div class="d-flex justify-content-center" style="margin-top:2rem;">
                 <div>
                     Already have an account?
                 </div>
