@@ -60,7 +60,7 @@ _``Our Project is a combination of Chatbot and Website.``_
 ![Home page](./images/4.jpeg)
 
 <span style="color:gold; font-family: Babas; font-size: 1.4em;">5) **Chatbot**:</span>Now comes the heart of our webpage that is <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">Chatbot</span> named ***Raghav***. Your friend that stands with you in all situations and uplift your mood and revive your broken confidence.Our IBM Watson lite bot designed using AI will help people to analyze their depression and on the other hand web application will help to cure their problem giving them a proper routine.
-<div> 
+<div style="display:flex; justify-content:center;"> 
 <img src = "images/5.jpg"/>
 </div>
 
