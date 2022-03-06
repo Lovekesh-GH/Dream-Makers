@@ -1,10 +1,11 @@
 # <span style="color:#fff; font-family: 'Bebas Neue'; font-size: 2em;">**DENIHILIFY** </span>
 
-##  💼 &nbsp; <span style="color: #f2cf4a; font-family: Babas; font-size: 1.4em;">**Tagline :**</span><span style="color:#fff; font-family: 'Bebas Neue'; font-size: 1.2em;">  From Depresion to Deep Rest
+##  💼 &nbsp; <span style="color: #f2cf4a; font-family: Babas; font-size: 1.4em;">**Tagline :**</span><span style="color:#fff; font-family: 'Bebas Neue'; font-size: 1.2em;">  From Depression to Deep Rest
 </span>
 
  🛠 &nbsp;<span style="color: #f2cf4a; font-family: Babas; font-size: 1.4em;">Tech Stack
 </span>
+
 ![RestFramework](https://img.shields.io/badge/RestFramework%20-%23092E20.svg?&style=for-the-badge&logo=django&logoColor=white)&nbsp;
 ![IBMWatson](https://img.shields.io/badge/IBMWatson-%2320232a.svg?style=for-the-badge&logo=IBMWatson&logoColor=%2361DAFB)&nbsp;
 ![Django](https://img.shields.io/badge/django%20-%23092E20.svg?&style=for-the-badge&logo=django&logoColor=white)&nbsp;
@@ -43,34 +44,33 @@ _``Our Project is a combination of Chatbot and Website.``_
 
 >>The best way to cure depression, Melancholy, anxiety is to uplift the confidence and make their life colorful again. Based on this design principle our team has designed a dynamic webpage for people who need help in this rough patch of their life. 
 
-><span style="color: #f2cf4a; font-family: Babas; font-size: 1.4em;">1) **Home**:</span>Homepage of website has been designed keeping in mind that the person might be low at the moment, so to cheer him up a soft theme is presented. It is easy enough for beginner to get started with homepage. 
+<span style="color: #f2cf4a; font-family: Babas; font-size: 1.4em;">1) **Home**:</span>Homepage of website has been designed keeping in mind that the person might be low at the moment, so to cheer him up a soft theme is presented. It is easy enough for beginner to get started with homepage. 
 ![Home page](./images/1.jpeg)
----
->>When you will click on **Get Started** you will be directed to our Sign up/Login Page.
+
+>When you will click on **Get Started** you will be directed to our Sign up/Login Page.
 ![Home page](./images/6.jpeg)
 
-><span style="color:gold; font-family: Babas; font-size: 1.4em;">2) **Daily Task**:</span>To start on a early and easy phase we have designed best suited schedule for the user. Following this schedule step wise will bring out the best change in you for your better.The user need to update the site after completing each task and is rewarded accordingly.
+<span style="color:gold; font-family: Babas; font-size: 1.4em;">2) **Daily Task**:</span>To start on a early and easy phase we have designed best suited schedule for the user. Following this schedule step wise will bring out the best change in you for your better.The user need to update the site after completing each task and is rewarded accordingly.
 ![Home page](./images/3.jpeg)
 
 ><span style="color:gold; font-family: Babas; font-size: 1.4em;">3) **Special Task**:</span>Our site also includes a set of specially designed tasks that our given to an individual on daily basis. The tasks are not only meant to destress the individual but also the streak based format makes them more lively and fun to do.
 ![Home page](./images/3.jpeg)
 
-><span style="color:gold; font-family: Babas; font-size: 1.4em;">4) **Store**:</span>After earning points from their daily streaks and special activities, they can make the most of their rewards by buying exciting stuff from our store of items.
+<span style="color:gold; font-family: Babas; font-size: 1.4em;">4) **Store**:</span>After earning points from their daily streaks and special activities, they can make the most of their rewards by buying exciting stuff from our store of items.
 ![Home page](./images/4.jpeg)
 
-><span style="color:gold; font-family: Babas; font-size: 1.4em;">5) **Chatbot**:</span>Now comes the heart of our webpage that is <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">Chatbot</span> named ***Raghav***. Your friend that stands with you in all situations and uplift your mood and revive your broken confidence.Our IBM Watson lite bot designed using AI will help people to analyze their depression and on the other hand web application will help to cure their problem giving them a proper routine.
+<span style="color:gold; font-family: Babas; font-size: 1.4em;">5) **Chatbot**:</span>Now comes the heart of our webpage that is <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">Chatbot</span> named ***Raghav***. Your friend that stands with you in all situations and uplift your mood and revive your broken confidence.Our IBM Watson lite bot designed using AI will help people to analyze their depression and on the other hand web application will help to cure their problem giving them a proper routine.
 ![Home page](./images/5.jpg)
 
 <span style="font-family: times, serif; font-size:11pt; font-style:italic">Click on the 
 [Link](https://drive.google.com/file/d/1CXnzpZCOaGdLIogPopiNcQ4GtadVNMoc/view?usp=sharing)
 to check the demo of the Chatbot</span>
 
-><span style="color:gold; font-family: Babas; font-size: 1.4em;">6) **Team**:</span>
+<span style="color:gold; font-family: Babas; font-size: 1.4em;">6) **Team**:</span>
 ![Home page](./images/7.jpeg)
 ![Home page](./images/8.jpeg)
 
 ----
-
 <!-- CONTRIBUTING -->
 
 ## <span style="color: #f2cf4a; font-family: Babas; font-size: 1.2em;">Contributing
